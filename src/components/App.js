@@ -22,12 +22,7 @@ const App = () => {
           <Route path="/teachers" element={<Teachers />}></Route>
           <Route path="/courses/*" element={<Courses  />}></Route>
           <Route path="/courses" element={<Navigate to="/courses/html"  />}></Route>
-            {/* <Route path='/courses/html' element={<HTML />}></Route> */}
-            {/* <Route path='/courses/css' element={<CSS />}></Route>
-            <Route path='/courses/javascript' element={<JavaScript />}></Route> */}
-          
           <Route path="/teachers/:topic/:name" element={<Featured />}></Route>
-          {/* <Route path:false element={<NotFound />}></Route> */}
         </Routes>
        
       </div>

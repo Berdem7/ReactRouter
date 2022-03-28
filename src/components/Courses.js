@@ -1,8 +1,5 @@
 import React from 'react';
 import { NavLink, Route, Routes } from 'react-router-dom';
-// import HTML from "./courses/HTML"
-// import CSS from "./courses/CSS"
-// import JavaScript from "./courses/JavaScript"
 import CoursesContent from "./courses/CoursesContent"
 
 import { HTMLCourses, CSSCourses, JSCourses } from '../data/courses';
@@ -19,15 +16,12 @@ const Courses = () => (
       </ul>
     </div>
     
-    {/* <BrowserRouter> */}
       <Routes> 
         <Route path="html" element={<CoursesContent data={HTMLCourses}/>}></Route>
         <Route path='css' element={<CoursesContent data={CSSCourses}/>}></Route>
         <Route path='javascript' element={<CoursesContent data={JSCourses} />}></Route>
         <Route path='*' element={<NotFound />}></Route>
       </Routes>
-    {/* </BrowserRouter> */}
-    {/* Write routes here... */}
   </div>
 );
 
